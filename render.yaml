@@ -38,13 +38,15 @@ services:
       - key: DB_POSTGRESDB_HOST
         value: aws-1-ap-south-1.pooler.supabase.com
       - key: DB_POSTGRESDB_PORT
-        value: 6543
+        value: 5432
       - key: DB_POSTGRESDB_DATABASE
-        value: supabase-red-kite
-      - key: DB_POSTGRESDB_USER
         value: postgres
+      - key: DB_POSTGRESDB_USER
+        value: postgres.gybvpuwaumjlgnwvczcr
       - key: DB_POSTGRESDB_PASSWORD
         sync: false  # set in Render Dashboard
+      - key: DB_POSTGRESDB_SSL
+        value: 'true'
 
       #  Supabase API Keys (optional)
       

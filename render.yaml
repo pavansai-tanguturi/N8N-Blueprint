@@ -31,22 +31,22 @@ services:
       - key: GENERIC_TIMEZONE
         value: Asia/Kolkata
       - key: N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS
-        value: 'true' 
+        value: 'true'
         
-      #  Supabase Database Connection
+      #  Supabase Database Connection (Transaction Pooler)
       
       - key: DB_TYPE
         value: postgresdb
       - key: DB_POSTGRESDB_HOST
         value: aws-1-ap-south-1.pooler.supabase.com
       - key: DB_POSTGRESDB_PORT
-        value: 5432
+        value: 6543
       - key: DB_POSTGRESDB_DATABASE
         value: postgres
       - key: DB_POSTGRESDB_USER
         value: postgres.gybvpuwaumjlgnwvczcr
       - key: DB_POSTGRESDB_PASSWORD
-        sync: false  # set in Render Dashboard
+        sync: false 
       - key: DB_POSTGRESDB_SSL
         value: 'true'
 

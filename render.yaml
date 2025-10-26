@@ -36,9 +36,9 @@ services:
       - key: DB_TYPE
         value: postgresdb
       - key: DB_POSTGRESDB_HOST
-        value: aws-1-ap-south-1.pooler.supabase.com
+        sync: false
       - key: DB_POSTGRESDB_PORT
-        value: 6543
+        value: 5432
       - key: DB_POSTGRESDB_DATABASE
         value: supabase-red-kite
       - key: DB_POSTGRESDB_USER

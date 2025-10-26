@@ -40,7 +40,7 @@ services:
       - key: DB_POSTGRESDB_PORT
         value: 6543
       - key: DB_POSTGRESDB_DATABASE
-        value: postgres
+        value: supabase-red-kite
       - key: DB_POSTGRESDB_USER
         value: postgres
       - key: DB_POSTGRESDB_PASSWORD
